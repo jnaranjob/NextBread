@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{909E9E60-8836-4E47-9B44-BCEA53C767BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoProgramacionIII</RootNamespace>
+    <AssemblyName>ProyectoProgramacionIII</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\CajaRegistradora.cs" />
+    <Compile Include="Entidades\Inventario.cs" />
+    <Compile Include="Entidades\Proveedor.cs" />
+    <Compile Include="Forms\Caja Registradora\frmCajaRegistradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Caja Registradora\frmCajaRegistradora.Designer.cs">
+      <DependentUpon>frmCajaRegistradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\frmEditarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\frmEditarInventario.Designer.cs">
+      <DependentUpon>frmEditarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\frmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\frmInventario.Designer.cs">
+      <DependentUpon>frmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventario\frmListarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\frmListarProductos.Designer.cs">
+      <DependentUpon>frmListarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuPrincipal\frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuPrincipal\frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Otros\Frm_ProcesoExitoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Otros\Frm_ProcesoExitoso.Designer.cs">
+      <DependentUpon>Frm_ProcesoExitoso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Otros\Frm_ProcesoFallido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Otros\Frm_ProcesoFallido.Designer.cs">
+      <DependentUpon>Frm_ProcesoFallido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmBuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmBuscarProveedor.Designer.cs">
+      <DependentUpon>frmBuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmEditarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmEditarProveedores.Designer.cs">
+      <DependentUpon>frmEditarProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmListarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmListarProveedores.Designer.cs">
+      <DependentUpon>frmListarProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedores\frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuario\Frm_RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuario\Frm_RegistrarUsuario.Designer.cs">
+      <DependentUpon>Frm_RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuario\Frm_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuario\Frm_Usuario.Designer.cs">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IntCajaRegistradora.cs" />
+    <Compile Include="Interfaces\IntInventario.cs" />
+    <Compile Include="Interfaces\IntProveedor.cs" />
+    <Compile Include="Interfaces\IntUsuario.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\ModuloCajaRegistradora.cs" />
+    <Compile Include="Servicios\ModuloInventario.cs" />
+    <Compile Include="Servicios\ModuloProveedor.cs" />
+    <Compile Include="Servicios\ModuloSeguridad.cs" />
+    <EmbeddedResource Include="Forms\Caja Registradora\frmCajaRegistradora.resx">
+      <DependentUpon>frmCajaRegistradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\frmEditarInventario.resx">
+      <DependentUpon>frmEditarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\frmInventario.resx">
+      <DependentUpon>frmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventario\frmListarProductos.resx">
+      <DependentUpon>frmListarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuPrincipal\frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Otros\Frm_ProcesoExitoso.resx">
+      <DependentUpon>Frm_ProcesoExitoso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Otros\Frm_ProcesoFallido.resx">
+      <DependentUpon>Frm_ProcesoFallido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedores\frmBuscarProveedor.resx">
+      <DependentUpon>frmBuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedores\frmEditarProveedores.resx">
+      <DependentUpon>frmEditarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedores\frmListarProveedores.resx">
+      <DependentUpon>frmListarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedores\frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuario\Frm_RegistrarUsuario.resx">
+      <DependentUpon>Frm_RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuario\Frm_Usuario.resx">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\agregar-proveedor.png" />
+    <Content Include="Imagenes\agregar-usuario.png" />
+    <Content Include="Imagenes\BOTON-CANCELAR.png" />
+    <Content Include="Imagenes\BOTON-CERRAR.png" />
+    <Content Include="Imagenes\buscar.png" />
+    <Content Include="Imagenes\Caja-Registradora.ico" />
+    <Content Include="Imagenes\caja-registradora.png" />
+    <Content Include="Imagenes\Cancel_icon-icons.com_73703.png" />
+    <Content Include="Imagenes\comprobado.png" />
+    <Content Include="Imagenes\datos-del-usuario.png" />
+    <Content Include="Imagenes\DELETE ICO.ico" />
+    <Content Include="Imagenes\EDIT ICO.ico" />
+    <Content Include="Imagenes\EDIT PNG.png" />
+    <Content Include="Imagenes\editar.png" />
+    <Content Include="Imagenes\eliminar-producto %281%29.png" />
+    <Content Include="Imagenes\Fondo subPantallas2.png" />
+    <Content Include="Imagenes\inhabilitar.png" />
+    <Content Include="Imagenes\inventario-disponible.png" />
+    <Content Include="Imagenes\inventario.ico" />
+    <Content Include="Imagenes\invoice_icon-icons.com_72236 %281%29.png" />
+    <Content Include="Imagenes\lista-de-verificacion.png" />
+    <Content Include="Imagenes\Listar Proveedores.ico" />
+    <None Include="Imagenes\Logo 1.PNG" />
+    <None Include="Imagenes\Logo 1 2.0.png" />
+    <Content Include="Imagenes\NEXT BREAD PNG.png" />
+    <Content Include="Imagenes\NEXTBREAD.ico" />
+    <Content Include="Imagenes\proveedor-alternativo.ico" />
+    <Content Include="Imagenes\Punto de venta.png" />
+    <Content Include="Imagenes\SAVE ICO.ico" />
+    <Content Include="Imagenes\SAVE PNG.png" />
+    <Content Include="Imagenes\SEARCH ICO.ico" />
+    <Content Include="Imagenes\SEARCH PNG.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
