@@ -31,43 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditarProveedores));
             this.tooAyuda = new System.Windows.Forms.ToolTip(this.components);
-            this.grbBuscaProvedor = new System.Windows.Forms.GroupBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.txtIDProveedor = new System.Windows.Forms.TextBox();
-            this.lblIDProveedor = new System.Windows.Forms.Label();
-            this.grbEditaProveedor = new System.Windows.Forms.GroupBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.cboEstado = new System.Windows.Forms.ComboBox();
             this.txtNomreP = new System.Windows.Forms.TextBox();
+            this.grbBuscaProvedor = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.lblIDProveedor = new System.Windows.Forms.Label();
+            this.grbEditaProveedor = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grbBuscaProvedor.SuspendLayout();
             this.grbEditaProveedor.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // grbBuscaProvedor
-            // 
-            this.grbBuscaProvedor.BackColor = System.Drawing.Color.Transparent;
-            this.grbBuscaProvedor.Controls.Add(this.btnBuscar);
-            this.grbBuscaProvedor.Controls.Add(this.txtIDProveedor);
-            this.grbBuscaProvedor.Controls.Add(this.lblIDProveedor);
-            this.grbBuscaProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbBuscaProvedor.Location = new System.Drawing.Point(57, 38);
-            this.grbBuscaProvedor.Name = "grbBuscaProvedor";
-            this.grbBuscaProvedor.Size = new System.Drawing.Size(649, 106);
-            this.grbBuscaProvedor.TabIndex = 0;
-            this.grbBuscaProvedor.TabStop = false;
-            this.grbBuscaProvedor.Text = "Buscar Proveedor";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(530, 41);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(113, 37);
-            this.btnBuscar.TabIndex = 2;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // txtIDProveedor
             // 
@@ -76,32 +53,6 @@
             this.txtIDProveedor.Size = new System.Drawing.Size(192, 30);
             this.txtIDProveedor.TabIndex = 1;
             this.tooAyuda.SetToolTip(this.txtIDProveedor, "Ingrese un ID a Buscar");
-            // 
-            // lblIDProveedor
-            // 
-            this.lblIDProveedor.AutoSize = true;
-            this.lblIDProveedor.Location = new System.Drawing.Point(21, 39);
-            this.lblIDProveedor.Name = "lblIDProveedor";
-            this.lblIDProveedor.Size = new System.Drawing.Size(281, 25);
-            this.lblIDProveedor.TabIndex = 0;
-            this.lblIDProveedor.Text = "Ingrese el ID del Proveedor:";
-            // 
-            // grbEditaProveedor
-            // 
-            this.grbEditaProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.grbEditaProveedor.Controls.Add(this.btnSalir);
-            this.grbEditaProveedor.Controls.Add(this.btnEditar);
-            this.grbEditaProveedor.Controls.Add(this.cboEstado);
-            this.grbEditaProveedor.Controls.Add(this.txtNomreP);
-            this.grbEditaProveedor.Controls.Add(this.label2);
-            this.grbEditaProveedor.Controls.Add(this.label1);
-            this.grbEditaProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbEditaProveedor.Location = new System.Drawing.Point(57, 164);
-            this.grbEditaProveedor.Name = "grbEditaProveedor";
-            this.grbEditaProveedor.Size = new System.Drawing.Size(649, 241);
-            this.grbEditaProveedor.TabIndex = 1;
-            this.grbEditaProveedor.TabStop = false;
-            this.grbEditaProveedor.Text = "Edita Proveedor";
             // 
             // btnSalir
             // 
@@ -143,6 +94,56 @@
             this.txtNomreP.TabIndex = 2;
             this.tooAyuda.SetToolTip(this.txtNomreP, "Nombre del proveedor");
             // 
+            // grbBuscaProvedor
+            // 
+            this.grbBuscaProvedor.BackColor = System.Drawing.Color.Transparent;
+            this.grbBuscaProvedor.Controls.Add(this.btnBuscar);
+            this.grbBuscaProvedor.Controls.Add(this.txtIDProveedor);
+            this.grbBuscaProvedor.Controls.Add(this.lblIDProveedor);
+            this.grbBuscaProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbBuscaProvedor.Location = new System.Drawing.Point(57, 38);
+            this.grbBuscaProvedor.Name = "grbBuscaProvedor";
+            this.grbBuscaProvedor.Size = new System.Drawing.Size(649, 106);
+            this.grbBuscaProvedor.TabIndex = 0;
+            this.grbBuscaProvedor.TabStop = false;
+            this.grbBuscaProvedor.Text = "Buscar Proveedor";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(530, 41);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(113, 37);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // lblIDProveedor
+            // 
+            this.lblIDProveedor.AutoSize = true;
+            this.lblIDProveedor.Location = new System.Drawing.Point(21, 39);
+            this.lblIDProveedor.Name = "lblIDProveedor";
+            this.lblIDProveedor.Size = new System.Drawing.Size(281, 25);
+            this.lblIDProveedor.TabIndex = 0;
+            this.lblIDProveedor.Text = "Ingrese el ID del Proveedor:";
+            // 
+            // grbEditaProveedor
+            // 
+            this.grbEditaProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.grbEditaProveedor.Controls.Add(this.btnSalir);
+            this.grbEditaProveedor.Controls.Add(this.btnEditar);
+            this.grbEditaProveedor.Controls.Add(this.cboEstado);
+            this.grbEditaProveedor.Controls.Add(this.txtNomreP);
+            this.grbEditaProveedor.Controls.Add(this.label2);
+            this.grbEditaProveedor.Controls.Add(this.label1);
+            this.grbEditaProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbEditaProveedor.Location = new System.Drawing.Point(57, 164);
+            this.grbEditaProveedor.Name = "grbEditaProveedor";
+            this.grbEditaProveedor.Size = new System.Drawing.Size(649, 241);
+            this.grbEditaProveedor.TabIndex = 1;
+            this.grbEditaProveedor.TabStop = false;
+            this.grbEditaProveedor.Text = "Edita Proveedor";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -174,6 +175,7 @@
             this.Name = "frmEditarProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Proveedores";
+            this.Load += new System.EventHandler(this.frmEditarProveedores_Load);
             this.grbBuscaProvedor.ResumeLayout(false);
             this.grbBuscaProvedor.PerformLayout();
             this.grbEditaProveedor.ResumeLayout(false);

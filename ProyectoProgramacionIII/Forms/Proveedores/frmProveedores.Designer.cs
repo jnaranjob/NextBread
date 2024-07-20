@@ -31,25 +31,87 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedores));
             this.toolAyuda = new System.Windows.Forms.ToolTip(this.components);
-            this.grpProveedores = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.cboEstado = new System.Windows.Forms.ComboBox();
-            this.lblEstado = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtIDProveedor = new System.Windows.Forms.TextBox();
+            this.grpProveedores = new System.Windows.Forms.GroupBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.grpProveedores.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(416, 198);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 71);
+            this.btnSalir.TabIndex = 8;
+            this.toolAyuda.SetToolTip(this.btnSalir, "Salir");
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(318, 198);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 71);
+            this.btnCancelar.TabIndex = 7;
+            this.toolAyuda.SetToolTip(this.btnCancelar, "Cancela el proceso.");
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.Location = new System.Drawing.Point(222, 198);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 71);
+            this.btnAgregar.TabIndex = 6;
+            this.toolAyuda.SetToolTip(this.btnAgregar, "Guarda un proveedor");
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "1- Activo",
+            "0- Inactivo"});
+            this.cboEstado.Location = new System.Drawing.Point(222, 146);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(190, 33);
+            this.cboEstado.TabIndex = 5;
+            this.toolAyuda.SetToolTip(this.cboEstado, "Ingrese el Estado");
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(222, 92);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(269, 30);
+            this.txtNombre.TabIndex = 3;
+            this.toolAyuda.SetToolTip(this.txtNombre, "Ingrese Nombre Proveedor");
+            // 
+            // txtIDProveedor
+            // 
+            this.txtIDProveedor.Enabled = false;
+            this.txtIDProveedor.Location = new System.Drawing.Point(222, 42);
+            this.txtIDProveedor.Name = "txtIDProveedor";
+            this.txtIDProveedor.Size = new System.Drawing.Size(425, 30);
+            this.txtIDProveedor.TabIndex = 1;
+            this.toolAyuda.SetToolTip(this.txtIDProveedor, "ID de Proveedor");
+            // 
             // grpProveedores
             // 
             this.grpProveedores.BackColor = System.Drawing.Color.Transparent;
-            this.grpProveedores.Controls.Add(this.button3);
+            this.grpProveedores.Controls.Add(this.btnSalir);
             this.grpProveedores.Controls.Add(this.btnCancelar);
             this.grpProveedores.Controls.Add(this.btnAgregar);
             this.grpProveedores.Controls.Add(this.cboEstado);
@@ -66,48 +128,6 @@
             this.grpProveedores.TabStop = false;
             this.grpProveedores.Text = "Proveedores:";
             // 
-            // button3
-            // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(416, 198);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 71);
-            this.button3.TabIndex = 8;
-            this.toolAyuda.SetToolTip(this.button3, "Salir");
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(318, 198);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 71);
-            this.btnCancelar.TabIndex = 7;
-            this.toolAyuda.SetToolTip(this.btnCancelar, "Cancela el proceso.");
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.Location = new System.Drawing.Point(222, 198);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 71);
-            this.btnAgregar.TabIndex = 6;
-            this.toolAyuda.SetToolTip(this.btnAgregar, "Guarda un proveedor");
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Items.AddRange(new object[] {
-            "1- Activo",
-            "0- Inactivo"});
-            this.cboEstado.Location = new System.Drawing.Point(222, 146);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(190, 33);
-            this.cboEstado.TabIndex = 5;
-            this.toolAyuda.SetToolTip(this.cboEstado, "Ingrese el Estado");
-            // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
@@ -117,14 +137,6 @@
             this.lblEstado.TabIndex = 4;
             this.lblEstado.Text = "Estado:";
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(222, 92);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(269, 30);
-            this.txtNombre.TabIndex = 3;
-            this.toolAyuda.SetToolTip(this.txtNombre, "Ingrese Nombre Proveedor");
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -133,15 +145,6 @@
             this.label2.Size = new System.Drawing.Size(94, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre:";
-            // 
-            // txtIDProveedor
-            // 
-            this.txtIDProveedor.Enabled = false;
-            this.txtIDProveedor.Location = new System.Drawing.Point(222, 42);
-            this.txtIDProveedor.Name = "txtIDProveedor";
-            this.txtIDProveedor.Size = new System.Drawing.Size(425, 30);
-            this.txtIDProveedor.TabIndex = 1;
-            this.toolAyuda.SetToolTip(this.txtIDProveedor, "ID de Proveedor");
             // 
             // label1
             // 
@@ -183,6 +186,7 @@
             this.Name = "frmProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proveedores";
+            this.Load += new System.EventHandler(this.frmProveedores_Load);
             this.grpProveedores.ResumeLayout(false);
             this.grpProveedores.PerformLayout();
             this.ResumeLayout(false);
@@ -200,7 +204,7 @@
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblUsuario;
