@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoProgramacionIII.Servicios
 {
-    public abstract class ModuloInventario : IntInventario
+    public class ModuloInventario : IntInventario
     {
 
         private IntUsuario moduloSeguridad;
@@ -21,7 +21,7 @@ namespace ProyectoProgramacionIII.Servicios
 
         }
 
-        public void agregarProducto(int codigoP, string nombre, int precioCosto, string tipoP, int cantidad, string nombreProveedor, bool estado, string nombreUsuario)
+        public void agregarProducto(int codigoP, string nombre, int precioCosto, int cantidad, string nombreProveedor, bool estado, string nombreUsuario)
         {
             Boolean tipoPermiso = moduloSeguridad.validarPermiso(nombreUsuario);
 
@@ -34,14 +34,13 @@ namespace ProyectoProgramacionIII.Servicios
             }
             else
             {
-                string queryDB = "INSERT INTO Inventario (Codigo, Nombre, Precio, Tipo, Cantidad, Proveedor, Estado) VALUES (@Codigo, @Nombre, @Precio, @Tipo, @Cantidad, @Proveedor, @Estado)";
+                string queryDB = "INSERT INTO Inventario (Codigo, Nombre, Precio, Cantidad, Proveedor, Estado) VALUES (@Codigo, @Nombre, @Precio, @Cantidad, @Proveedor, @Estado)";
                 using (SqlCommand DBSQL = new SqlCommand(queryDB))
                 { //En el comando falta agregar la linea de codigo de la conexion de la DB.
 
                     DBSQL.Parameters.AddWithValue("@Codigo", codigoP);
                     DBSQL.Parameters.AddWithValue("@Nombre", nombre);
                     DBSQL.Parameters.AddWithValue("@Precio", precioCosto);
-                    DBSQL.Parameters.AddWithValue("@Tipo", tipoP);
                     DBSQL.Parameters.AddWithValue("@Cantidad", cantidad);
                     DBSQL.Parameters.AddWithValue("@Proveedor", nombreProveedor);
                     DBSQL.Parameters.AddWithValue("@Estado", estado);
@@ -70,7 +69,7 @@ namespace ProyectoProgramacionIII.Servicios
             }
         }
 
-        public void editarProducto(string nombre, int precioCosto, string tipoP, int cantidad, string nombreProveedor, string nombreUsuario)
+        public void editarProducto(string nombre, int precioCosto, int cantidad, string nombreProveedor, string nombreUsuario)
         {
 
             Boolean tipoPermiso = moduloSeguridad.validarPermiso(nombreUsuario);
@@ -84,14 +83,13 @@ namespace ProyectoProgramacionIII.Servicios
             }
             else
             {
-                string queryDB = "UPDATE Proveedor SET Nombre = @Nombre, Precio = @Precio, Tipo = @Tipo, Cantidad = @Cantidad, Proveedor = @Proveedor, Estado = @Estado WHERE Nombre = @Nombre";
+                string queryDB = "UPDATE Proveedor SET Nombre = @Nombre, Precio = @Precio, Cantidad = @Cantidad, Proveedor = @Proveedor, Estado = @Estado WHERE Nombre = @Nombre";
 
                 using (SqlCommand DBSQL = new SqlCommand(queryDB))
                 { //En el comando falta agregar la linea de codigo de la conexion de la DB.
 
                     DBSQL.Parameters.AddWithValue("@Nombre", nombre);
                     DBSQL.Parameters.AddWithValue("@Precio", precioCosto);
-                    DBSQL.Parameters.AddWithValue("@Tipo", tipoP);
                     DBSQL.Parameters.AddWithValue("@Cantidad", cantidad);
                     DBSQL.Parameters.AddWithValue("@Proveedor", nombreProveedor);
 

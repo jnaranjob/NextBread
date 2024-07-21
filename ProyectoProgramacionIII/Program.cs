@@ -1,4 +1,5 @@
-﻿using ProyectoProgramacionIII.Forms.MenuPrincipal;
+﻿using ProyectoProgramacionIII.Forms.Inventario;
+using ProyectoProgramacionIII.Forms.MenuPrincipal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace ProyectoProgramacionIII
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenuPrincipal());
+            Application.Run(new frmInventario());
         }
     }
 }

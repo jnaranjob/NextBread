@@ -38,15 +38,15 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.txtNombrePro = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblCantidad = new System.Windows.Forms.Label();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.txtNombrePro = new System.Windows.Forms.TextBox();
             this.lblNombrePro = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.grbBuscarProd.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -58,46 +58,53 @@
             this.grbBuscarProd.Controls.Add(this.txtIDProducto);
             this.grbBuscarProd.Controls.Add(this.lblIDProducto);
             this.grbBuscarProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbBuscarProd.Location = new System.Drawing.Point(65, 47);
+            this.grbBuscarProd.Location = new System.Drawing.Point(49, 38);
+            this.grbBuscarProd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbBuscarProd.Name = "grbBuscarProd";
-            this.grbBuscarProd.Size = new System.Drawing.Size(812, 113);
+            this.grbBuscarProd.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbBuscarProd.Size = new System.Drawing.Size(609, 92);
             this.grbBuscarProd.TabIndex = 0;
             this.grbBuscarProd.TabStop = false;
             this.grbBuscarProd.Text = "Buscar Producto";
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(649, 44);
+            this.btnBuscar.Location = new System.Drawing.Point(487, 36);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(147, 33);
+            this.btnBuscar.Size = new System.Drawing.Size(110, 27);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.toolAyuda.SetToolTip(this.btnBuscar, "Busca el Producto");
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtIDProducto
             // 
-            this.txtIDProducto.Location = new System.Drawing.Point(358, 44);
+            this.txtIDProducto.Location = new System.Drawing.Point(268, 36);
+            this.txtIDProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIDProducto.Name = "txtIDProducto";
-            this.txtIDProducto.Size = new System.Drawing.Size(268, 30);
+            this.txtIDProducto.Size = new System.Drawing.Size(202, 26);
             this.txtIDProducto.TabIndex = 1;
             this.toolAyuda.SetToolTip(this.txtIDProducto, "Ingrese el ID de Producto.");
             // 
             // lblIDProducto
             // 
             this.lblIDProducto.AutoSize = true;
-            this.lblIDProducto.Location = new System.Drawing.Point(27, 44);
+            this.lblIDProducto.Location = new System.Drawing.Point(20, 36);
+            this.lblIDProducto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIDProducto.Name = "lblIDProducto";
-            this.lblIDProducto.Size = new System.Drawing.Size(293, 25);
+            this.lblIDProducto.Size = new System.Drawing.Size(242, 20);
             this.lblIDProducto.TabIndex = 0;
             this.lblIDProducto.Text = "Ingrese Codigo del Producto:";
             // 
             // btnActualizar
             // 
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(247, 246);
+            this.btnActualizar.Location = new System.Drawing.Point(185, 200);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 71);
+            this.btnActualizar.Size = new System.Drawing.Size(56, 58);
             this.btnActualizar.TabIndex = 7;
             this.toolAyuda.SetToolTip(this.btnActualizar, "Modifica los datos del prodcuto");
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -106,9 +113,10 @@
             // btnEliminar
             // 
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(337, 246);
+            this.btnEliminar.Location = new System.Drawing.Point(253, 200);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 71);
+            this.btnEliminar.Size = new System.Drawing.Size(56, 58);
             this.btnEliminar.TabIndex = 8;
             this.toolAyuda.SetToolTip(this.btnEliminar, "Elimina el Producto");
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -116,13 +124,54 @@
             // btnSalir
             // 
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(434, 246);
+            this.btnSalir.Location = new System.Drawing.Point(326, 200);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 71);
+            this.btnSalir.Size = new System.Drawing.Size(56, 58);
             this.btnSalir.TabIndex = 9;
             this.toolAyuda.SetToolTip(this.btnSalir, "Salir");
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(185, 120);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(148, 26);
+            this.txtPrecio.TabIndex = 5;
+            this.toolAyuda.SetToolTip(this.txtPrecio, "Precio del Producto");
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "1- Activo",
+            "0- Inactivo"});
+            this.cboEstado.Location = new System.Drawing.Point(185, 75);
+            this.cboEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(168, 28);
+            this.cboEstado.TabIndex = 3;
+            this.toolAyuda.SetToolTip(this.cboEstado, "Estado del Producto");
+            // 
+            // txtNombrePro
+            // 
+            this.txtNombrePro.Location = new System.Drawing.Point(185, 38);
+            this.txtNombrePro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombrePro.Name = "txtNombrePro";
+            this.txtNombrePro.Size = new System.Drawing.Size(413, 26);
+            this.txtNombrePro.TabIndex = 1;
+            this.toolAyuda.SetToolTip(this.txtNombrePro, "Nombre del Producto");
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(185, 158);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(148, 26);
+            this.txtCantidad.TabIndex = 10;
+            this.toolAyuda.SetToolTip(this.txtCantidad, "Cantidad del producto.");
             // 
             // groupBox1
             // 
@@ -139,9 +188,11 @@
             this.groupBox1.Controls.Add(this.txtNombrePro);
             this.groupBox1.Controls.Add(this.lblNombrePro);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(65, 183);
+            this.groupBox1.Location = new System.Drawing.Point(49, 149);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(812, 330);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(609, 268);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Editar Productos - Inventario";
@@ -149,84 +200,53 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(32, 200);
+            this.lblCantidad.Location = new System.Drawing.Point(24, 162);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(106, 25);
+            this.lblCantidad.Size = new System.Drawing.Size(86, 20);
             this.lblCantidad.TabIndex = 6;
             this.lblCantidad.Text = "Cantidad:";
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(247, 148);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(196, 30);
-            this.txtPrecio.TabIndex = 5;
-            this.toolAyuda.SetToolTip(this.txtPrecio, "Precio del Producto");
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(32, 148);
+            this.lblPrecio.Location = new System.Drawing.Point(24, 120);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(80, 25);
+            this.lblPrecio.Size = new System.Drawing.Size(64, 20);
             this.lblPrecio.TabIndex = 4;
             this.lblPrecio.Text = "Precio:";
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Items.AddRange(new object[] {
-            "1- Activo",
-            "0- Inactivo"});
-            this.cboEstado.Location = new System.Drawing.Point(247, 92);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(223, 33);
-            this.cboEstado.TabIndex = 3;
-            this.toolAyuda.SetToolTip(this.cboEstado, "Estado del Producto");
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(32, 92);
+            this.lblEstado.Location = new System.Drawing.Point(24, 75);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(86, 25);
+            this.lblEstado.Size = new System.Drawing.Size(71, 20);
             this.lblEstado.TabIndex = 2;
             this.lblEstado.Text = "Estado:";
-            // 
-            // txtNombrePro
-            // 
-            this.txtNombrePro.Location = new System.Drawing.Point(247, 47);
-            this.txtNombrePro.Name = "txtNombrePro";
-            this.txtNombrePro.Size = new System.Drawing.Size(549, 30);
-            this.txtNombrePro.TabIndex = 1;
-            this.toolAyuda.SetToolTip(this.txtNombrePro, "Nombre del Producto");
             // 
             // lblNombrePro
             // 
             this.lblNombrePro.AutoSize = true;
-            this.lblNombrePro.Location = new System.Drawing.Point(32, 45);
+            this.lblNombrePro.Location = new System.Drawing.Point(24, 37);
+            this.lblNombrePro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombrePro.Name = "lblNombrePro";
-            this.lblNombrePro.Size = new System.Drawing.Size(186, 25);
+            this.lblNombrePro.Size = new System.Drawing.Size(153, 20);
             this.lblNombrePro.TabIndex = 0;
             this.lblNombrePro.Text = "Nombre Producto:";
             // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(247, 195);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(196, 30);
-            this.txtCantidad.TabIndex = 10;
-            this.toolAyuda.SetToolTip(this.txtCantidad, "Cantidad del producto.");
-            // 
             // frmEditarInventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(934, 549);
+            this.ClientSize = new System.Drawing.Size(700, 446);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbBuscarProd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "frmEditarInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

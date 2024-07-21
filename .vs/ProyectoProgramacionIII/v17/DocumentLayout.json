@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Proyecto Panaderia Nisi\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\NextBread\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\proyecto panaderia nisi\\proyectoprogramacioniii\\forms\\usuario\\frm_registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\usuario\\frm_registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\forms\\inventario\\frmeditarinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\inventario\\frmeditarinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\proyecto panaderia nisi\\proyectoprogramacioniii\\forms\\usuario\\frm_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\usuario\\frm_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\forms\\inventario\\frmeditarinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\inventario\\frmeditarinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\servicios\\moduloinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\servicios\\moduloinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\interfaces\\intinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\interfaces\\intinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\Usuario\\Desktop\\NextBread\\proyectoprogramacioniii\\forms\\inventario\\frminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\inventario\\frminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmEditarInventario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:25:57.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmEditarInventario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Inventario\\frmEditarInventario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:25:24.794Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IntInventario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Interfaces\\IntInventario.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Interfaces\\IntInventario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Interfaces\\IntInventario.cs",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Interfaces\\IntInventario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:04:49.963Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -34,27 +84,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frm_RegistrarUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto Panaderia Nisi\\ProyectoProgramacionIII\\Forms\\Usuario\\Frm_RegistrarUsuario.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Usuario\\Frm_RegistrarUsuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto Panaderia Nisi\\ProyectoProgramacionIII\\Forms\\Usuario\\Frm_RegistrarUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Usuario\\Frm_RegistrarUsuario.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "ModuloInventario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Servicios\\ModuloInventario.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Servicios\\ModuloInventario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Servicios\\ModuloInventario.cs",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Servicios\\ModuloInventario.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFcAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T19:46:10.879Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-07-20T04:34:21.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Frm_Usuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto Panaderia Nisi\\ProyectoProgramacionIII\\Forms\\Usuario\\Frm_Usuario.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Usuario\\Frm_Usuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto Panaderia Nisi\\ProyectoProgramacionIII\\Forms\\Usuario\\Frm_Usuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Usuario\\Frm_Usuario.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "frmInventario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Inventario\\frmInventario.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Inventario\\frmInventario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Inventario\\frmInventario.cs",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Inventario\\frmInventario.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAEAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T19:39:31.168Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-07-20T03:52:39.623Z",
+              "EditorCaption": ""
             }
           ]
         }
