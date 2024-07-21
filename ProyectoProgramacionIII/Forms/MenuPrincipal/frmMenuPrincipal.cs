@@ -1,4 +1,5 @@
-﻿using ProyectoProgramacionIII.Forms.Caja_Registradora;
+﻿using ProyectoProgramacionIII.Conexion;
+using ProyectoProgramacionIII.Forms.Caja_Registradora;
 using ProyectoProgramacionIII.Forms.Inventario;
 using ProyectoProgramacionIII.Forms.Proveedores;
 using System;
@@ -20,6 +21,7 @@ namespace ProyectoProgramacionIII.Forms.MenuPrincipal
             InitializeComponent();
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.IsMdiContainer = true;
+            ConexionBD dbConnection = ConexionBD.Instancia;
         }
 
         private void cajaRegistradoraToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,6 +39,16 @@ namespace ProyectoProgramacionIII.Forms.MenuPrincipal
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
         {
             pictureBox1.Size = new System.Drawing.Size(1224, 700);
+            try
+            {
+                // Abrir la conexión al cargar el formulario
+                ConexionBD.Instancia.AbrirConexion();
+                Console.WriteLine("Conexión abierta correctamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al abrir la conexión: " + ex.Message);
+            }
         }
 
         private void agrgarToolStripMenuItem_Click(object sender, EventArgs e)

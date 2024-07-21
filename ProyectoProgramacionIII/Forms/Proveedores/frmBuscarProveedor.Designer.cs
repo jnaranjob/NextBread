@@ -59,6 +59,7 @@
             this.btnBuscar.TabIndex = 2;
             this.toolAyuda.SetToolTip(this.btnBuscar, "Busca el ID de Proveedor.");
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnSeleccionar
             // 
@@ -69,6 +70,7 @@
             this.btnSeleccionar.TabIndex = 3;
             this.toolAyuda.SetToolTip(this.btnSeleccionar, "Selecciona el ID de Proveedor.");
             this.btnSeleccionar.UseVisualStyleBackColor = true;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
             // 
             // dgvProveedor
             // 

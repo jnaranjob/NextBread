@@ -40,6 +40,7 @@ C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimest
 C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto Progralll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Inventario.frmEditarInventario.resources
 C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto Progralll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Proveedores.frmEditarProveedores.resources
 C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto Progralll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Proveedores.frmBuscarProveedor.resources
+<<<<<<< HEAD
 C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Caja_Registradora.frmCajaRegistradora.resources
 C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Inventario.frmEditarInventario.resources
@@ -60,3 +61,27 @@ C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoPro
 C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.exe
 C:\Users\Usuario\Desktop\NextBread\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.pdb
+=======
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Caja_Registradora.frmCajaRegistradora.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Inventario.frmEditarInventario.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Inventario.frmInventario.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Inventario.frmListarProductos.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.MenuPrincipal.frmMenuPrincipal.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Otros.Frm_ProcesoExitoso.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Otros.Frm_ProcesoFallido.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Proveedores.frmBuscarProveedor.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Proveedores.frmEditarProveedores.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Proveedores.frmListarProveedores.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Proveedores.frmProveedores.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Usuario.Frm_RegistrarUsuario.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Forms.Usuario.Frm_Usuario.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.csproj.GenerateResource.cache
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.exe
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.pdb
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\bin\Debug\ProyectoProgramacionIII.exe.config
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\bin\Debug\ProyectoProgramacionIII.exe
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\bin\Debug\ProyectoProgramacionIII.pdb
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.Properties.Resources.resources
+C:\Users\jimen\OneDrive\Documentos\Ingles integrado\Documentos\Cuarto cuatrimestre UAM\Programacion lll\Proyecto de Programación lll\ProyectoProgramacionIII\obj\Debug\ProyectoProgramacionIII.csproj.CoreCompileInputs.cache
+>>>>>>> 51f5c69ff5dee15b93e77a5d78d140ad483d8a5d

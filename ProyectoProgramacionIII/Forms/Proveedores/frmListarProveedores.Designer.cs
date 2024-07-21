@@ -74,6 +74,7 @@
             this.btnInactivar.TabIndex = 2;
             this.toolAyuda.SetToolTip(this.btnInactivar, "Inactiva un proveedor.");
             this.btnInactivar.UseVisualStyleBackColor = true;
+            this.btnInactivar.Click += new System.EventHandler(this.btnInactivar_Click);
             // 
             // btnEliminarProveedor
             // 
@@ -85,6 +86,7 @@
             this.btnEliminarProveedor.TabIndex = 1;
             this.toolAyuda.SetToolTip(this.btnEliminarProveedor, "Elimina un proveedor");
             this.btnEliminarProveedor.UseVisualStyleBackColor = true;
+            this.btnEliminarProveedor.Click += new System.EventHandler(this.btnEliminarProveedor_Click);
             // 
             // dgvListaProveedores
             // 
@@ -110,6 +112,7 @@
             this.Name = "frmListarProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listar Proveedores";
+            this.Load += new System.EventHandler(this.frmListarProveedores_Load);
             this.grpListarProveedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProveedores)).EndInit();
             this.ResumeLayout(false);
