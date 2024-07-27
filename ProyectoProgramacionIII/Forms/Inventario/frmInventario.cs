@@ -71,5 +71,15 @@ namespace ProyectoProgramacionIII.Forms.Inventario
             }
             _Inventario.agregarProducto(codigoP, nombre, precioCosto, cantidad, nombreProveedor, estado, nombreUsuario);
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpInventario_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

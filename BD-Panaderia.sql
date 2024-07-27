@@ -1,6 +1,9 @@
-create database Panaderia;
+CREATE DATABASE Panaderia;
+GO
 
-use Panaderia;
+USE Panaderia;
+GO
+
 CREATE TABLE Usuario(
     IdUsuario INT NOT NULL PRIMARY KEY,
     Nombre NVARCHAR(80) NOT NULL,
@@ -8,13 +11,15 @@ CREATE TABLE Usuario(
     Permiso INT NOT NULL,
     Estado BIT NOT NULL
 );
+GO
 
 CREATE TABLE Permisos(
-	Id_Permiso INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    Id_Permiso INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     IdUsuario INT NOT NULL,
-	Permiso NVARCHAR(50) NOT NULL,
+    Permiso NVARCHAR(50) NOT NULL,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
+GO
 
 CREATE TABLE Proveedor (
     IdProveedor INT NOT NULL PRIMARY KEY IDENTITY(1,1),
@@ -23,32 +28,37 @@ CREATE TABLE Proveedor (
     IdUsuario INT NOT NULL,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
+GO
 
 CREATE TABLE Inventario (
     CodigoProducto NVARCHAR(50) NOT NULL PRIMARY KEY,
     Nombre NVARCHAR(50) NOT NULL,
     Estado BIT NOT NULL,
-	Precio DECIMAL(18,2) NOT NULL,
-	Cantidad INT NOT NULL,
-	IdProveedor INT NOT NULL,
+    Precio DECIMAL(18,2) NOT NULL,
+    Cantidad INT NOT NULL,
+    IdProveedor INT NOT NULL,
     FOREIGN KEY (IdProveedor) REFERENCES Proveedor(IdProveedor),
     IdUsuario INT NOT NULL,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
+GO
+
 CREATE TABLE TipoPago(
-	IdTipoPago NVARCHAR(50) NOT NULL PRIMARY KEY,
+    IdTipoPago NVARCHAR(50) NOT NULL PRIMARY KEY,
     Descripcion NVARCHAR(100) NOT NULL
 );
+GO
 
 CREATE TABLE CajaRegistradora(
     CodigoVenta NVARCHAR(20) NOT NULL PRIMARY KEY,
-	FechaCompra DATETIME NOT NULL,
-    IdTipoPago NVARCHAR(50) NOT NULL,	
+    FechaCompra DATETIME NOT NULL,
+    IdTipoPago NVARCHAR(50) NOT NULL,
     CompraFinal DECIMAL(10, 2) NOT NULL,
     IdUsuario INT NOT NULL,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario),
     FOREIGN KEY (IdTipoPago) REFERENCES TipoPago(IdTipoPago)
 );
+GO
 
 CREATE TABLE DetalleFactura(
     IdDetalle INT NOT NULL PRIMARY KEY IDENTITY(1,1),
@@ -60,3 +70,4 @@ CREATE TABLE DetalleFactura(
     FOREIGN KEY (CodigoVenta) REFERENCES CajaRegistradora(CodigoVenta),
     FOREIGN KEY (CodigoProducto) REFERENCES Inventario(CodigoProducto)
 );
+GO

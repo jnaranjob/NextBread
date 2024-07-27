@@ -41,6 +41,7 @@
             this.txtNombreP = new System.Windows.Forms.TextBox();
             this.txtCodigoP = new System.Windows.Forms.TextBox();
             this.grpInventario = new System.Windows.Forms.GroupBox();
+            this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.lblIDProvedor = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.lblCodigoP = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.grpInventario.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@
             this.btnSalir.TabIndex = 15;
             this.toolAyuda.SetToolTip(this.btnSalir, "Salir.");
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnCancelar
             // 
@@ -178,6 +179,16 @@
             this.grpInventario.TabIndex = 0;
             this.grpInventario.TabStop = false;
             this.grpInventario.Text = "Inventario:";
+            this.grpInventario.Enter += new System.EventHandler(this.grpInventario_Enter);
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(188, 169);
+            this.txtPrecio.Mask = "₡ 000000";
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 26);
+            this.txtPrecio.TabIndex = 16;
+            this.txtPrecio.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtPrecio_MaskInputRejected);
             // 
             // lblIDProvedor
             // 
@@ -257,15 +268,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(76, 20);
             this.txtUsuario.TabIndex = 2;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(188, 169);
-            this.txtPrecio.Mask = "₡ 000000";
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 26);
-            this.txtPrecio.TabIndex = 16;
-            this.txtPrecio.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtPrecio_MaskInputRejected);
             // 
             // frmInventario
             // 
