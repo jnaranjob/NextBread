@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCajaRegistradora));
             this.grpFacturar = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaCompra = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigoVenta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             // grpFacturar
             // 
             this.grpFacturar.BackColor = System.Drawing.Color.Transparent;
-            this.grpFacturar.Controls.Add(this.dateTimePicker1);
+            this.grpFacturar.Controls.Add(this.dtpFechaCompra);
             this.grpFacturar.Controls.Add(this.label2);
             this.grpFacturar.Controls.Add(this.txtCodigoVenta);
             this.grpFacturar.Controls.Add(this.label1);
@@ -79,14 +79,14 @@
             this.grpFacturar.TabStop = false;
             this.grpFacturar.Text = "Encabezado Factura:";
             // 
-            // dateTimePicker1
+            // dtpFechaCompra
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(195, 106);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(417, 30);
-            this.dateTimePicker1.TabIndex = 3;
-            this.toolAyuda.SetToolTip(this.dateTimePicker1, "Fecha Actual");
+            this.dtpFechaCompra.Enabled = false;
+            this.dtpFechaCompra.Location = new System.Drawing.Point(195, 106);
+            this.dtpFechaCompra.Name = "dtpFechaCompra";
+            this.dtpFechaCompra.Size = new System.Drawing.Size(417, 30);
+            this.dtpFechaCompra.TabIndex = 3;
+            this.toolAyuda.SetToolTip(this.dtpFechaCompra, "Fecha Actual");
             // 
             // label2
             // 
@@ -210,6 +210,7 @@
             this.btnFacturar.TabIndex = 11;
             this.toolAyuda.SetToolTip(this.btnFacturar, "Facturar");
             this.btnFacturar.UseVisualStyleBackColor = true;
+            this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click);
             // 
             // dtgLineasfactura
             // 
@@ -265,6 +266,7 @@
             this.txtCodigoproducto.Size = new System.Drawing.Size(567, 30);
             this.txtCodigoproducto.TabIndex = 5;
             this.toolAyuda.SetToolTip(this.txtCodigoproducto, "Ingrese el Codigo del producto");
+            this.txtCodigoproducto.TextChanged += new System.EventHandler(this.txtCodigoproducto_TextChanged);
             // 
             // lblCodigoproducto
             // 
@@ -371,6 +373,7 @@
             this.Name = "frmCajaRegistradora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caja Registradora -- Facturación";
+            this.Load += new System.EventHandler(this.frmCajaRegistradora_Load);
             this.grpFacturar.ResumeLayout(false);
             this.grpFacturar.PerformLayout();
             this.grpDetalle.ResumeLayout(false);
@@ -385,7 +388,7 @@
         private System.Windows.Forms.GroupBox grpFacturar;
         private System.Windows.Forms.TextBox txtCodigoVenta;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaCompra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpDetalle;
         private System.Windows.Forms.Label lblTipopago;
