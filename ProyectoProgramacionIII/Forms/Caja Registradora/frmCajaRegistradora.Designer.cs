@@ -200,6 +200,7 @@
             this.btnEliminarP.TabIndex = 12;
             this.toolAyuda.SetToolTip(this.btnEliminarP, "Eliminar Productos.");
             this.btnEliminarP.UseVisualStyleBackColor = true;
+            this.btnEliminarP.Click += new System.EventHandler(this.btnEliminarP_Click);
             // 
             // btnFacturar
             // 
@@ -223,6 +224,7 @@
             this.dtgLineasfactura.Size = new System.Drawing.Size(759, 150);
             this.dtgLineasfactura.TabIndex = 10;
             this.toolAyuda.SetToolTip(this.dtgLineasfactura, "Lista de productos");
+            this.dtgLineasfactura.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLineasfactura_CellValueChanged);
             // 
             // txtPrecio
             // 
@@ -249,6 +251,7 @@
             this.txtCantidad.Size = new System.Drawing.Size(210, 30);
             this.txtCantidad.TabIndex = 7;
             this.toolAyuda.SetToolTip(this.txtCantidad, "Ingrese la cantidad a comprar");
+            this.txtCantidad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCantidad_KeyDown);
             // 
             // lblCantidad
             // 
@@ -308,6 +311,7 @@
             this.cboTipoopago.Size = new System.Drawing.Size(183, 33);
             this.cboTipoopago.TabIndex = 1;
             this.toolAyuda.SetToolTip(this.cboTipoopago, "Ingrese el tipo de pago");
+            this.cboTipoopago.SelectedIndexChanged += new System.EventHandler(this.cboTipoopago_SelectedIndexChanged);
             // 
             // lblTipopago
             // 
@@ -335,6 +339,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 22);
             this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "1";
             // 
             // lblIDdetalle
             // 

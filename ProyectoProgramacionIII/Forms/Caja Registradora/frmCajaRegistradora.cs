@@ -1,66 +1,199 @@
 ﻿using ProyectoProgramacionIII.Conexion;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoProgramacionIII.Forms.Caja_Registradora
 {
     public partial class frmCajaRegistradora : Form
     {
+        private Dictionary<string, string> tiposPago = new Dictionary<string, string>
+        {
+            { "01", "Efectivo" },
+            { "02", "Tarjeta" },
+            { "03", "Sinpe Movil" },
+            { "04", "Otro" }
+        };
+
+        private SqlConnection connection;
+
         public frmCajaRegistradora()
         {
             InitializeComponent();
             ConexionBD dbConnection = ConexionBD.Instancia;
+            connection = dbConnection.GetConnection(); // Obtener la conexión desde la instancia
+            cboTipoopago.DataSource = new BindingSource(tiposPago, null);
+            cboTipoopago.DisplayMember = "Value";
+            cboTipoopago.ValueMember = "Key";
+            txtCantidad.KeyDown += new KeyEventHandler(txtCantidad_KeyDown);
         }
+
+        private void frmCajaRegistradora_Load(object sender, EventArgs e)
+        {
+            dtgLineasfactura.Columns.Add("CodigoProducto", "Código Producto");
+            dtgLineasfactura.Columns.Add("Precio", "Precio");
+            dtgLineasfactura.Columns.Add("Cantidad", "Cantidad");
+            dtgLineasfactura.Columns.Add("SubTotal", "SubTotal");
+
+            dtgLineasfactura.Columns["CodigoProducto"].ReadOnly = true; 
+            dtgLineasfactura.Columns["Precio"].ReadOnly = true; 
+            dtgLineasfactura.Columns["Cantidad"].ReadOnly = false; 
+            dtgLineasfactura.Columns["SubTotal"].ReadOnly = true; 
+
+            cboTipoopago.DataSource = new BindingSource(tiposPago, null);
+            cboTipoopago.DisplayMember = "Value";
+            cboTipoopago.ValueMember = "Key";
+        }
+
+        private void txtCantidad_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab || e.KeyCode == Keys.Enter)
+            {
+                AgregarProductoAlGrid();
+                e.Handled = true;  // Evita el beep de la tecla Enter
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void AgregarProductoAlGrid()
+        {
+            if (string.IsNullOrEmpty(txtCodigoproducto.Text) ||
+            string.IsNullOrEmpty(txtPrecio.Text) ||
+            string.IsNullOrEmpty(txtCantidad.Text))
+            {
+                MessageBox.Show("Debe completar los campos de producto, precio y cantidad.");
+                return;
+            }
+
+            string codigoProducto = txtCodigoproducto.Text.Trim();
+            decimal precio = Convert.ToDecimal(txtPrecio.Text.Trim());
+            int cantidad = Convert.ToInt32(txtCantidad.Text.Trim());
+
+            // Verificar disponibilidad en inventario
+            if (!VerificarDisponibilidadProducto(codigoProducto, cantidad))
+            {
+                MessageBox.Show("Cantidad insuficiente en inventario.");
+                return;
+            }
+
+            decimal subtotal = precio * cantidad;
+
+            dtgLineasfactura.Rows.Add(codigoProducto, precio, cantidad, subtotal);
+
+            // Actualizar los totales
+            CalcularTotales();
+
+            // Limpiar campos y enfocar
+            txtCodigoproducto.Clear();
+            txtCantidad.Clear();
+            txtPrecio.Clear();
+            txtCodigoproducto.Focus();
+        }
+
+        private bool VerificarDisponibilidadProducto(string codigoProducto, int cantidadRequerida)
+        {
+            string query = @"SELECT Cantidad FROM Inventario WHERE CodigoProducto = @CodigoProducto";
+
+            using (SqlCommand cmd = new SqlCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@CodigoProducto", codigoProducto);
+
+                try
+                {
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.Open();
+                    }
+
+                    int cantidadDisponible = Convert.ToInt32(cmd.ExecuteScalar());
+                    return cantidadDisponible >= cantidadRequerida;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al verificar disponibilidad del producto: " + ex.Message);
+                    return false;
+                }
+            }
+        }
+
         private string InsertarEncabezadoFactura(DateTime fechaCompra, string idTipoPago, decimal compraFinal, int idUsuario)
         {
             string codigoVenta = string.Empty;
 
-            using (SqlConnection conn = ConexionBD.Instancia.GetConnection())
-            {
-                string query = @"
+            string insertQuery = @"
                     INSERT INTO CajaRegistradora (FechaCompra, IdTipoPago, CompraFinal, IdUsuario)
-                    VALUES (@FechaCompra, @IdTipoPago, @CompraFinal, @IdUsuario);
-                    
-                    SELECT SCOPE_IDENTITY();";
+                    VALUES (@FechaCompra, @IdTipoPago, @CompraFinal, @IdUsuario);";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@FechaCompra", fechaCompra);
-                cmd.Parameters.AddWithValue("@IdTipoPago", idTipoPago);
-                cmd.Parameters.AddWithValue("@CompraFinal", compraFinal);
-                cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            string selectQuery = @"
+                    SELECT TOP 1 CodigoVenta 
+                    FROM TempCodigoVenta
+                    ORDER BY CodigoVenta DESC;";
+
+            using (SqlCommand insertCmd = new SqlCommand(insertQuery, connection))
+            {
+                insertCmd.Parameters.AddWithValue("@FechaCompra", fechaCompra);
+                insertCmd.Parameters.AddWithValue("@IdTipoPago", idTipoPago);
+                insertCmd.Parameters.AddWithValue("@CompraFinal", compraFinal);
+                insertCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
 
                 try
                 {
-                    conn.Open();
-                    object result = cmd.ExecuteScalar();
-                    codigoVenta = result != null ? result.ToString() : string.Empty;
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.Open();
+                    }
+                    insertCmd.ExecuteNonQuery();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error al insertar el encabezado de la factura: " + ex.Message);
+                    return codigoVenta;  // Salir temprano si hay un error
+                }
+            }
+
+            using (SqlCommand selectCmd = new SqlCommand(selectQuery, connection))
+            {
+                try
+                {
+                    using (SqlDataReader reader = selectCmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            codigoVenta = reader["CodigoVenta"].ToString();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al obtener el código de venta: " + ex.Message);
+                }
+                finally
+                {
+                    if (connection.State == ConnectionState.Open)
+                    {
+                        connection.Close();
+                    }
                 }
             }
 
             return codigoVenta;
         }
 
+
         private void InsertarDetalleFactura(string codigoVenta, string codigoProducto, decimal precio, int cantidad, decimal subtotal)
         {
-            using (SqlConnection conn = ConexionBD.Instancia.GetConnection())
-            {
-                string query = @"
-                    INSERT INTO DetalleFactura (CodigoVenta, CodigoProducto, Precio, Cantidad, SubTotal)
-                    VALUES (@CodigoVenta, @CodigoProducto, @Precio, @Cantidad, @SubTotal)";
+            string query = @"
+                INSERT INTO DetalleFactura (CodigoVenta, CodigoProducto, Precio, Cantidad, SubTotal)
+                VALUES (@CodigoVenta, @CodigoProducto, @Precio, @Cantidad, @SubTotal);
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                UPDATE Inventario
+                SET Cantidad = Cantidad - @Cantidad
+                WHERE CodigoProducto = @CodigoProducto";
+
+            using (SqlCommand cmd = new SqlCommand(query, connection))
+            {
                 cmd.Parameters.AddWithValue("@CodigoVenta", codigoVenta);
                 cmd.Parameters.AddWithValue("@CodigoProducto", codigoProducto);
                 cmd.Parameters.AddWithValue("@Precio", precio);
@@ -69,12 +202,15 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
 
                 try
                 {
-                    conn.Open();
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.Open();
+                    }
                     cmd.ExecuteNonQuery();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al insertar el detalle de la factura: " + ex.Message);
+                    MessageBox.Show("Error al insertar el detalle de la factura y actualizar inventario: " + ex.Message);
                 }
             }
         }
@@ -82,32 +218,35 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
         private decimal CalcularTotales()
         {
             decimal total = 0;
+            decimal subtotal = 0;
+
             foreach (DataGridViewRow row in dtgLineasfactura.Rows)
             {
                 if (row.Cells["SubTotal"].Value != null)
                 {
-                    total += Convert.ToDecimal(row.Cells["SubTotal"].Value);
+                    subtotal += Convert.ToDecimal(row.Cells["SubTotal"].Value);
                 }
             }
-
+            total = subtotal;
+            txtSubtotal.Text = subtotal.ToString("0.00");
             txtTotal.Text = total.ToString("0.00");
+
             return total;
         }
 
         private void BuscarProducto(string codigoProducto)
         {
-            using (SqlConnection conn = ConexionBD.Instancia.GetConnection())
+            string query = @"SELECT Precio FROM Inventario WHERE CodigoProducto = @CodigoProducto";
+
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
-                string query = @"SELECT Precio FROM Inventario WHERE CodigoProducto = @CodigoProducto";
-                SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@CodigoProducto", codigoProducto);
 
                 try
                 {
-                    // Verifica si la conexión está cerrada antes de abrirla
-                    if (conn.State == ConnectionState.Closed)
+                    if (connection.State == ConnectionState.Closed)
                     {
-                        conn.Open();
+                        connection.Open();
                     }
 
                     SqlDataReader reader = cmd.ExecuteReader();
@@ -128,12 +267,11 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
             }
         }
 
-
         private void btnFacturar_Click(object sender, EventArgs e)
         {
             DateTime fechaCompra = DateTime.Now;
             string idTipoPago = cboTipoopago.SelectedValue?.ToString();
-            int idUsuario;
+            int idUsuario = 1;
             if (!int.TryParse(txtUsuario.Text, out idUsuario))
             {
                 MessageBox.Show("El ID del usuario no es válido.");
@@ -155,6 +293,8 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
                 return;
             }
 
+            txtCodigoVenta.Text = codigoVenta;
+
             foreach (DataGridViewRow row in dtgLineasfactura.Rows)
             {
                 if (row.Cells["CodigoProducto"].Value != null)
@@ -167,14 +307,11 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
                     InsertarDetalleFactura(codigoVenta, codigoProducto, precio, cantidad, subtotal);
                 }
             }
-
+            
             MessageBox.Show("Factura generada con éxito.");
-        }
 
-        private void frmCajaRegistradora_Load(object sender, EventArgs e)
-        {
-            //txtCodigoVenta.Text = codigo;
-            //var connection = ConexionBD.Instancia.GetConnection();
+            dtgLineasfactura.Rows.Clear();
+            txtCodigoVenta.Text = "";
         }
 
         private void txtCodigoproducto_TextChanged(object sender, EventArgs e)
@@ -185,5 +322,63 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
                 BuscarProducto(codigoProducto);
             }
         }
+
+        private void cboTipoopago_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboTipoopago.SelectedValue != null)
+            {
+                txtDescripcion.Text = cboTipoopago.Text;
+            }
+        }
+
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtCantidad.Text))
+            {
+                AgregarProductoAlGrid();
+            }
+        }
+
+        private void btnEliminarP_Click(object sender, EventArgs e)
+        {
+            if (dtgLineasfactura.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("¿Desea eliminar el artículo seleccionado?",
+                                                      "Confirmar Eliminación",
+                                                      MessageBoxButtons.YesNo,
+                                                      MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    foreach (DataGridViewRow row in dtgLineasfactura.SelectedRows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            dtgLineasfactura.Rows.Remove(row);
+                        }
+                    }
+                    CalcularTotales();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para eliminar.");
+            }
+        }
+
+        private void dtgLineasfactura_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dtgLineasfactura.Columns["Cantidad"].Index && e.RowIndex >= 0)
+            {
+                int cantidad = Convert.ToInt32(dtgLineasfactura.Rows[e.RowIndex].Cells["Cantidad"].Value);
+                decimal precio = Convert.ToDecimal(dtgLineasfactura.Rows[e.RowIndex].Cells["Precio"].Value);
+
+                decimal subtotal = precio * cantidad;
+                dtgLineasfactura.Rows[e.RowIndex].Cells["SubTotal"].Value = subtotal;
+
+                CalcularTotales();
+            }
+        }
     }
 }
+

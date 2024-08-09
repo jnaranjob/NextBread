@@ -1,24 +1,5 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\NextBread\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\servicios\\moduloproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\servicios\\moduloproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\usuario\\desktop\\nextbread\\proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\Usuario\\Desktop\\NextBread\\proyectoprogramacioniii\\conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
   "WorkspaceRootPath": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\",
   "Documents": [
     {
@@ -26,21 +7,20 @@
       "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\caja registradora\\frmcajaregistradora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|c:\\users\\jimen\\onedrive\\documentos\\ingles integrado\\documentos\\cuarto cuatrimestre uam\\programacion lll\\proyecto de programaci\u00F3n lll\\proyectoprogramacioniii\\forms\\menuprincipal\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\menuprincipal\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\proyectoprogramacioniii\\conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\proyectoprogramacioniii\\forms\\caja registradora\\frmcajaregistradora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\caja registradora\\frmcajaregistradora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\proyectoprogramacioniii\\forms\\menuprincipal\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\menuprincipal\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> 78a34cdcfa406c47aa1fcaa5dfc1f9d8fa851dd0
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\proyectoprogramacioniii\\servicios\\moduloproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\servicios\\moduloproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{909E9E60-8836-4E47-9B44-BCEA53C767BC}|ProyectoProgramacionIII\\ProyectoProgramacionIII.csproj|solutionrelative:proyectoprogramacioniii\\forms\\proveedores\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,132 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 5,
-=======
-          "SelectedChildIndex": 3,
->>>>>>> 78a34cdcfa406c47aa1fcaa5dfc1f9d8fa851dd0
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-<<<<<<< HEAD
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModuloProveedor.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAcwFkAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T22:12:41.016Z",
-=======
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmMenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBYAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T18:14:23.842Z",
->>>>>>> 78a34cdcfa406c47aa1fcaa5dfc1f9d8fa851dd0
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "frmProveedores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T22:09:31.023Z",
-              "EditorCaption": " [Dise\u00F1o]"
-=======
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAArwDAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T01:12:59.709Z",
-              "EditorCaption": ""
->>>>>>> 78a34cdcfa406c47aa1fcaa5dfc1f9d8fa851dd0
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "frmProveedores.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAAAEkAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T01:28:21.87Z",
-=======
               "Title": "frmCajaRegistradora.cs",
               "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs",
               "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs",
               "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs",
               "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAIYAAAAsAAAA",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAAANMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T01:05:12.165Z",
->>>>>>> 78a34cdcfa406c47aa1fcaa5dfc1f9d8fa851dd0
+              "WhenOpened": "2024-08-03T01:09:39.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-<<<<<<< HEAD
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\NextBread\\ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Conexion\\ConexionBD.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T01:33:30.851Z"
-=======
+              "DocumentIndex": 1,
               "Title": "frmCajaRegistradora.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs",
               "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs",
               "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Caja Registradora\\frmCajaRegistradora.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T00:31:56.282Z",
+              "WhenOpened": "2024-07-29T13:54:25.911Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMenuPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs",
-              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\MenuPrincipal\\frmMenuPrincipal.cs [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "ModuloProveedor.cs",
+              "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
+              "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Servicios\\ModuloProveedor.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAcwFkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T00:19:07.378Z",
-              "EditorCaption": " [Dise\u00F1o]"
->>>>>>> 78a34cdcfa406c47aa1fcaa5dfc1f9d8fa851dd0
+              "WhenOpened": "2024-07-29T13:48:10.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmProveedores.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
+              "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs [Design]",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:48:10.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmProveedores.cs",
+              "DocumentMoniker": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
+              "RelativeDocumentMoniker": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
+              "ToolTip": "C:\\Users\\jimen\\OneDrive\\Documentos\\Ingles integrado\\Documentos\\Cuarto cuatrimestre UAM\\Programacion lll\\Proyecto de Programaci\u00F3n lll\\ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
+              "RelativeToolTip": "ProyectoProgramacionIII\\Forms\\Proveedores\\frmProveedores.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAEkAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:48:10.509Z"
             }
           ]
         }
