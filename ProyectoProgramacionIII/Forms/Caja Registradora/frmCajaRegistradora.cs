@@ -185,5 +185,15 @@ namespace ProyectoProgramacionIII.Forms.Caja_Registradora
                 BuscarProducto(codigoProducto);
             }
         }
+
+        private void dtpFechaCompra_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
