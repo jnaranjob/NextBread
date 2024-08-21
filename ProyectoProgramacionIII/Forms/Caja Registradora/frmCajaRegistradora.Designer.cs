@@ -241,6 +241,7 @@
             this.dtgLineasfactura.Size = new System.Drawing.Size(569, 122);
             this.dtgLineasfactura.TabIndex = 10;
             this.toolAyuda.SetToolTip(this.dtgLineasfactura, "Lista de productos");
+            this.dtgLineasfactura.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLineasfactura_CellValueChanged);
             // 
             // txtPrecio
             // 
@@ -270,6 +271,7 @@
             this.txtCantidad.Size = new System.Drawing.Size(158, 26);
             this.txtCantidad.TabIndex = 7;
             this.toolAyuda.SetToolTip(this.txtCantidad, "Ingrese la cantidad a comprar");
+            this.txtCantidad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCantidad_KeyDown);
             // 
             // lblCantidad
             // 
@@ -335,6 +337,7 @@
             this.cboTipoopago.Size = new System.Drawing.Size(138, 28);
             this.cboTipoopago.TabIndex = 1;
             this.toolAyuda.SetToolTip(this.cboTipoopago, "Ingrese el tipo de pago");
+            this.cboTipoopago.SelectedIndexChanged += new System.EventHandler(this.cboTipoopago_SelectedIndexChanged);
             // 
             // lblTipopago
             // 
@@ -365,6 +368,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(76, 20);
             this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "1";
             // 
             // lblIDdetalle
             // 
